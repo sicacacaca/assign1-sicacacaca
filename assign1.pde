@@ -73,7 +73,7 @@ if(robotX-lazerX2>=15){
   lazerX=lazerX-2;
   }
 if(robotX-lazerX2>=160){
-  lazerX=robotX+23;
+  lazerX=robotX+25;
   lazerX2=lazerX;
   }
   }
