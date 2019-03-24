@@ -1,4 +1,4 @@
-
+// 0324 fixed
 PImage bg,soilImg,lifeImg,hogImg,soldierImg,robotImg;
 float robotX,robotY,soldierX,soldierY,lazerX,lazerY,lazerX2,lazerY2;
 final int SOLDIDER_SPEED=1;
