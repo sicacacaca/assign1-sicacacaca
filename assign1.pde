@@ -19,7 +19,7 @@ void setup() {
 
 //soilderMoving
   soldierY=floor((random(4))+2)*80;
-  soldierX=random(0,320);
+  soldierX=-80;//fixed
 
 //lazerMoving
   lazerX=robotX+25;
@@ -31,6 +31,7 @@ void setup() {
 void draw() {
 	background(bg);
   image(soilImg,0,160);
+
 
 //grass
   colorMode(RGB);
@@ -51,7 +52,7 @@ void draw() {
   image(lifeImg,150,10);
 
 //groundhog
-  image(hogImg,275,80);
+  image(hogImg,width/2-40,80);
 
 //soilder
   soldierX=soldierX+1;
@@ -72,7 +73,7 @@ void draw() {
 if(robotX-lazerX2>=15){
   lazerX=lazerX-2;
   }
-if(robotX-lazerX2>=160){
+if(robotX-lazerX2>=160){//over range
   lazerX=robotX+25;
   lazerX2=lazerX;
   }
